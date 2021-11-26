@@ -1,0 +1,1164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1042</width>
+    <height>754</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="rasp">
+       <attribute name="title">
+        <string>Расписание</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QWidget" name="Monday" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <widget class="QLabel" name="Mon">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLable { font-size: 14px; }</string>
+             </property>
+             <property name="text">
+              <string>Понедельник</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTableView" name="Mon_school"/>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="Mon_note">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>80</height>
+              </size>
+             </property>
+             <property name="baseSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QWidget" name="Tuesday" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <widget class="QLabel" name="Tue">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLable { font-size: 14px; }</string>
+             </property>
+             <property name="text">
+              <string>Вторник</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="Tue_school"/>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="Tue_note">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>80</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QWidget" name="Wednesday" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <widget class="QLabel" name="Wed">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLable { font-size: 14px; }</string>
+             </property>
+             <property name="text">
+              <string>Среда</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="Wed_school"/>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="Wed_note">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>80</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QWidget" name="Add_Upd" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_13">
+           <item>
+            <widget class="QGroupBox" name="Add">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="title">
+              <string>Добавить предмет</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_15">
+              <item>
+               <widget class="QWidget" name="combo1" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout">
+                 <property name="spacing">
+                  <number>9</number>
+                 </property>
+                 <property name="sizeConstraint">
+                  <enum>QLayout::SetFixedSize</enum>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QComboBox" name="weekday1">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>Пн</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Вт</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Ср</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Чт</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Пт</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Сб</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Вс</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="object1">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>След.</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>1</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>2</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>3</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>4</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>5</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>6</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>7</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>8</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="add_line">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="add_but">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>-1</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    padding:10px;
+    color: #fffff;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #3873d9;
+    background-color: white; }</string>
+                </property>
+                <property name="text">
+                 <string>Добавить</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+             <zorder>combo1</zorder>
+             <zorder>add_line</zorder>
+             <zorder>add_but</zorder>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="Upd">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="title">
+              <string>Изменть предмет</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_16">
+              <item>
+               <widget class="QWidget" name="combo2" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_2">
+                 <property name="spacing">
+                  <number>9</number>
+                 </property>
+                 <property name="sizeConstraint">
+                  <enum>QLayout::SetFixedSize</enum>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QComboBox" name="weekday2">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>Пн</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Вт</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Ср</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Чт</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Пт</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Сб</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Вс</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="object2">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>1</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>2</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>3</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>4</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>5</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>6</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>7</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>8</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="upd_line">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="upd_but">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>-1</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    padding:10px;
+    color: #fffff;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #3873d9;
+    background-color: white; }</string>
+                </property>
+                <property name="text">
+                 <string>Обновить</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QWidget" name="Thursday" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_10">
+           <item>
+            <widget class="QLabel" name="Thu">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLable { font-size: 14px; }</string>
+             </property>
+             <property name="text">
+              <string>Четверг</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="Thu_school"/>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="Thu_note">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>80</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QWidget" name="Friday" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_11">
+           <item>
+            <widget class="QLabel" name="Fri">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLable { font-size: 14px; }</string>
+             </property>
+             <property name="text">
+              <string>Пятница</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="Fri_school"/>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="Fri_note">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>80</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QWidget" name="Saturday" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_12">
+           <item>
+            <widget class="QLabel" name="Sat">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLable { font-size: 14px; }</string>
+             </property>
+             <property name="text">
+              <string>Суббота</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="Sat_school"/>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="Sat_note">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>80</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QWidget" name="Del_Space" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_14">
+           <item>
+            <widget class="QGroupBox" name="Del">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="title">
+              <string>Удалить предмет</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_17">
+              <property name="spacing">
+               <number>6</number>
+              </property>
+              <property name="leftMargin">
+               <number>9</number>
+              </property>
+              <property name="topMargin">
+               <number>9</number>
+              </property>
+              <property name="rightMargin">
+               <number>9</number>
+              </property>
+              <property name="bottomMargin">
+               <number>9</number>
+              </property>
+              <item>
+               <widget class="QComboBox" name="weekday3">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Везде</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Пн</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Вт</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Ср</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Чт</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Пт</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Сб</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Вс</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="object3">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Любой</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>2</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>3</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>4</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>5</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>6</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>7</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>8</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="subjects">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="del_but">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>-1</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    padding:10px;
+    color: #fffff;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #3873d9;
+    background-color: white; }</string>
+                </property>
+                <property name="text">
+                 <string>Удалить</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Space">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    padding:10px;
+    color: #fffff;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #3873d9;
+    background-color: white; }</string>
+             </property>
+             <property name="text">
+              <string>Обнуление</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+       <zorder>Del_Space</zorder>
+       <zorder>Add_Upd</zorder>
+       <zorder>Saturday</zorder>
+       <zorder>Friday</zorder>
+       <zorder>Thursday</zorder>
+       <zorder>Wednesday</zorder>
+       <zorder>Tuesday</zorder>
+       <zorder>Monday</zorder>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Заметки</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="QWidget" name="widget_14" native="true">
+          <widget class="QTabWidget" name="tabWidget_2">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>430</y>
+             <width>681</width>
+             <height>251</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="currentIndex">
+            <number>2</number>
+           </property>
+           <widget class="QWidget" name="tab_3">
+            <attribute name="title">
+             <string>Сделать</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <widget class="QWidget" name="widget_12" native="true">
+               <widget class="QPushButton" name="pushButton_5">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>10</y>
+                  <width>211</width>
+                  <height>51</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    padding:10px;
+    color: #fffff;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #3873d9;
+    background-color: white; }</string>
+                </property>
+                <property name="text">
+                 <string>Выполнено</string>
+                </property>
+               </widget>
+               <widget class="QDateTimeEdit" name="dateTimeEdit_4">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>70</y>
+                  <width>211</width>
+                  <height>51</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+               </widget>
+               <widget class="QComboBox" name="comboBox">
+                <property name="geometry">
+                 <rect>
+                  <x>240</x>
+                  <y>10</y>
+                  <width>411</width>
+                  <height>51</height>
+                 </rect>
+                </property>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="tab_4">
+            <attribute name="title">
+             <string>Добавить</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <widget class="QWidget" name="widget_10" native="true">
+               <widget class="QPlainTextEdit" name="plainTextEdit">
+                <property name="geometry">
+                 <rect>
+                  <x>230</x>
+                  <y>10</y>
+                  <width>411</width>
+                  <height>111</height>
+                 </rect>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="pushButton_6">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>10</y>
+                  <width>211</width>
+                  <height>51</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    padding:10px;
+    color: #fffff;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #3873d9;
+    background-color: white; }</string>
+                </property>
+                <property name="text">
+                 <string>Добавить</string>
+                </property>
+               </widget>
+               <widget class="QDateTimeEdit" name="dateTimeEdit_3">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>70</y>
+                  <width>211</width>
+                  <height>51</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="tab_7">
+            <attribute name="title">
+             <string>Редактрировать</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QWidget" name="widget_11" native="true">
+               <widget class="QPushButton" name="pushButton_9">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>10</y>
+                  <width>211</width>
+                  <height>51</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    padding:10px;
+    color: #fffff;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #3873d9;
+    background-color: white; }</string>
+                </property>
+                <property name="text">
+                 <string>Обновить</string>
+                </property>
+               </widget>
+               <widget class="QDateTimeEdit" name="dateTimeEdit_5">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>70</y>
+                  <width>211</width>
+                  <height>51</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+               </widget>
+               <widget class="QComboBox" name="comboBox_9">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>130</y>
+                  <width>211</width>
+                  <height>51</height>
+                 </rect>
+                </property>
+               </widget>
+               <widget class="QPlainTextEdit" name="plainTextEdit_3">
+                <property name="geometry">
+                 <rect>
+                  <x>240</x>
+                  <y>10</y>
+                  <width>411</width>
+                  <height>171</height>
+                 </rect>
+                </property>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_4">
+           <property name="geometry">
+            <rect>
+             <x>710</x>
+             <y>430</y>
+             <width>261</width>
+             <height>251</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="title">
+            <string> Просмотр заметки</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <widget class="QWidget" name="widget_13" native="true">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>241</width>
+              <height>221</height>
+             </rect>
+            </property>
+            <widget class="QComboBox" name="comboBox_5">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>221</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <item>
+              <property name="text">
+               <string>За всё время</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>За месяц</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>За неделю</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>На опред. дату</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>На опред. время</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>170</y>
+               <width>221</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>-1</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    padding:10px;
+    color: #fffff;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #3873d9;
+    background-color: white; }</string>
+             </property>
+             <property name="text">
+              <string>Показать</string>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+          <widget class="QTableWidget" name="tableWidget_13">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>961</width>
+             <height>401</height>
+            </rect>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="action_Sig_in">
+   <property name="text">
+    <string>&amp;Sig in</string>
+   </property>
+  </action>
+  <action name="action_Sign_in">
+   <property name="text">
+    <string>&amp;Sign in</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
