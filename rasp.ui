@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1042</width>
-    <height>754</height>
+    <width>1002</width>
+    <height>817</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -28,48 +28,14 @@
         <string>Расписание</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout">
-        <item row="0" column="0">
-         <widget class="QWidget" name="Monday" native="true">
-          <layout class="QVBoxLayout" name="verticalLayout_7">
-           <item>
-            <widget class="QLabel" name="Mon">
-             <property name="font">
-              <font>
-               <pointsize>14</pointsize>
-              </font>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QLable { font-size: 14px; }</string>
-             </property>
-             <property name="text">
-              <string>Понедельник</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QTableView" name="Mon_school"/>
-           </item>
-           <item>
-            <widget class="QTableWidget" name="Mon_note">
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>80</height>
-              </size>
-             </property>
-             <property name="baseSize">
-              <size>
-               <width>0</width>
-               <height>0</height>
-              </size>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </widget>
-        </item>
         <item row="0" column="1">
          <widget class="QWidget" name="Tuesday" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>240</width>
+            <height>370</height>
+           </size>
+          </property>
           <layout class="QVBoxLayout" name="verticalLayout_8">
            <item>
             <widget class="QLabel" name="Tue">
@@ -102,8 +68,60 @@
           </layout>
          </widget>
         </item>
+        <item row="0" column="0">
+         <widget class="QWidget" name="Monday" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>240</width>
+            <height>370</height>
+           </size>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <widget class="QLabel" name="Mon">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLable { font-size: 14px; }</string>
+             </property>
+             <property name="text">
+              <string>Понедельник</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="Mon_school"/>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="Mon_note">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>80</height>
+              </size>
+             </property>
+             <property name="baseSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
         <item row="0" column="2">
          <widget class="QWidget" name="Wednesday" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>240</width>
+            <height>370</height>
+           </size>
+          </property>
           <layout class="QVBoxLayout" name="verticalLayout_9">
            <item>
             <widget class="QLabel" name="Wed">
@@ -136,11 +154,112 @@
           </layout>
          </widget>
         </item>
+        <item row="2" column="0">
+         <widget class="QWidget" name="Thursday" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>240</width>
+            <height>370</height>
+           </size>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_10">
+           <item>
+            <widget class="QLabel" name="Thu">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLable { font-size: 14px; }</string>
+             </property>
+             <property name="text">
+              <string>Четверг</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="Thu_school"/>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="Thu_note">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>80</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QWidget" name="Saturday" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>240</width>
+            <height>370</height>
+           </size>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_12">
+           <item>
+            <widget class="QLabel" name="Sat">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLable { font-size: 14px; }</string>
+             </property>
+             <property name="text">
+              <string>Суббота</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="Sat_school"/>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="Sat_note">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>80</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
         <item row="0" column="3">
          <widget class="QWidget" name="Add_Upd" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>190</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>190</width>
+            <height>16777215</height>
+           </size>
+          </property>
           <layout class="QVBoxLayout" name="verticalLayout_13">
            <item>
+            <widget class="QWidget" name="fake4" native="true"/>
+           </item>
+           <item>
             <widget class="QGroupBox" name="Add">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>170</height>
+              </size>
+             </property>
              <property name="font">
               <font>
                <pointsize>10</pointsize>
@@ -159,7 +278,7 @@
                <widget class="QWidget" name="combo1" native="true">
                 <property name="minimumSize">
                  <size>
-                  <width>0</width>
+                  <width>152</width>
                   <height>30</height>
                  </size>
                 </property>
@@ -186,8 +305,8 @@
                   <widget class="QComboBox" name="weekday1">
                    <property name="minimumSize">
                     <size>
-                     <width>0</width>
-                     <height>30</height>
+                     <width>72</width>
+                     <height>25</height>
                     </size>
                    </property>
                    <item>
@@ -220,19 +339,14 @@
                      <string>Сб</string>
                     </property>
                    </item>
-                   <item>
-                    <property name="text">
-                     <string>Вс</string>
-                    </property>
-                   </item>
                   </widget>
                  </item>
                  <item>
                   <widget class="QComboBox" name="object1">
                    <property name="minimumSize">
                     <size>
-                     <width>0</width>
-                     <height>30</height>
+                     <width>71</width>
+                     <height>25</height>
                     </size>
                    </property>
                    <item>
@@ -290,7 +404,17 @@
                 <property name="minimumSize">
                  <size>
                   <width>0</width>
-                  <height>30</height>
+                  <height>25</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="choose_obj1">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>25</height>
                  </size>
                 </property>
                </widget>
@@ -300,14 +424,12 @@
                 <property name="minimumSize">
                  <size>
                   <width>0</width>
-                  <height>30</height>
+                  <height>37</height>
                  </size>
                 </property>
                 <property name="font">
                  <font>
                   <pointsize>-1</pointsize>
-                  <weight>50</weight>
-                  <bold>false</bold>
                  </font>
                 </property>
                 <property name="styleSheet">
@@ -317,21 +439,39 @@
     font-size: 18px;
     border-radius: 10px;
     border: 1px solid #3873d9;
-    background-color: white; }</string>
+    background-color: white;
+	box-shadow: 0 0 10px rgb(0, 0, 0);\n
+	transition: all 1s;
+}
+
+QPushButton:hover{
+	background-color: rgb(171, 211, 247);
+	effect = QtWidgets.QGraphicsDropShadowEffect(QPushButton)
+	effect.setOffset(0, 0)
+	effect.setBlurRadius(20)
+	effect.setColor(QColor(57, 219, 255))
+	QPushButton.setGraphicsEffect(effect)
+}</string>
                 </property>
                 <property name="text">
-                 <string>Добавить</string>
+                 <string>Обновить</string>
                 </property>
                </widget>
               </item>
              </layout>
-             <zorder>combo1</zorder>
-             <zorder>add_line</zorder>
-             <zorder>add_but</zorder>
             </widget>
            </item>
            <item>
+            <widget class="QWidget" name="fake1" native="true"/>
+           </item>
+           <item>
             <widget class="QGroupBox" name="Upd">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>170</height>
+              </size>
+             </property>
              <property name="font">
               <font>
                <pointsize>10</pointsize>
@@ -347,128 +487,13 @@
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_16">
               <item>
-               <widget class="QWidget" name="combo2" native="true">
+               <widget class="QComboBox" name="choose_obj2">
                 <property name="minimumSize">
                  <size>
                   <width>0</width>
-                  <height>30</height>
+                  <height>25</height>
                  </size>
                 </property>
-                <layout class="QHBoxLayout" name="horizontalLayout_2">
-                 <property name="spacing">
-                  <number>9</number>
-                 </property>
-                 <property name="sizeConstraint">
-                  <enum>QLayout::SetFixedSize</enum>
-                 </property>
-                 <property name="leftMargin">
-                  <number>0</number>
-                 </property>
-                 <property name="topMargin">
-                  <number>0</number>
-                 </property>
-                 <property name="rightMargin">
-                  <number>0</number>
-                 </property>
-                 <property name="bottomMargin">
-                  <number>0</number>
-                 </property>
-                 <item>
-                  <widget class="QComboBox" name="weekday2">
-                   <property name="minimumSize">
-                    <size>
-                     <width>0</width>
-                     <height>30</height>
-                    </size>
-                   </property>
-                   <item>
-                    <property name="text">
-                     <string>Пн</string>
-                    </property>
-                   </item>
-                   <item>
-                    <property name="text">
-                     <string>Вт</string>
-                    </property>
-                   </item>
-                   <item>
-                    <property name="text">
-                     <string>Ср</string>
-                    </property>
-                   </item>
-                   <item>
-                    <property name="text">
-                     <string>Чт</string>
-                    </property>
-                   </item>
-                   <item>
-                    <property name="text">
-                     <string>Пт</string>
-                    </property>
-                   </item>
-                   <item>
-                    <property name="text">
-                     <string>Сб</string>
-                    </property>
-                   </item>
-                   <item>
-                    <property name="text">
-                     <string>Вс</string>
-                    </property>
-                   </item>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QComboBox" name="object2">
-                   <property name="minimumSize">
-                    <size>
-                     <width>0</width>
-                     <height>30</height>
-                    </size>
-                   </property>
-                   <item>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </item>
-                   <item>
-                    <property name="text">
-                     <string>2</string>
-                    </property>
-                   </item>
-                   <item>
-                    <property name="text">
-                     <string>3</string>
-                    </property>
-                   </item>
-                   <item>
-                    <property name="text">
-                     <string>4</string>
-                    </property>
-                   </item>
-                   <item>
-                    <property name="text">
-                     <string>5</string>
-                    </property>
-                   </item>
-                   <item>
-                    <property name="text">
-                     <string>6</string>
-                    </property>
-                   </item>
-                   <item>
-                    <property name="text">
-                     <string>7</string>
-                    </property>
-                   </item>
-                   <item>
-                    <property name="text">
-                     <string>8</string>
-                    </property>
-                   </item>
-                  </widget>
-                 </item>
-                </layout>
                </widget>
               </item>
               <item>
@@ -476,7 +501,7 @@
                 <property name="minimumSize">
                  <size>
                   <width>0</width>
-                  <height>30</height>
+                  <height>25</height>
                  </size>
                 </property>
                </widget>
@@ -486,7 +511,13 @@
                 <property name="minimumSize">
                  <size>
                   <width>0</width>
-                  <height>30</height>
+                  <height>35</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>37</height>
                  </size>
                 </property>
                 <property name="font">
@@ -501,10 +532,19 @@
     font-size: 18px;
     border-radius: 10px;
     border: 1px solid #3873d9;
-    background-color: white; }</string>
+    background-color: white; }
+
+QPushButton:hover{
+	background-color: rgb(171, 211, 247);
+	effect = QtWidgets.QGraphicsDropShadowEffect(QPushButton)
+	effect.setOffset(0, 0)
+	effect.setBlurRadius(20)
+	effect.setColor(QColor(57, 219, 255))
+	QPushButton.setGraphicsEffect(effect)
+}</string>
                 </property>
                 <property name="text">
-                 <string>Обновить</string>
+                 <string>Изменить</string>
                 </property>
                </widget>
               </item>
@@ -514,42 +554,14 @@
           </layout>
          </widget>
         </item>
-        <item row="1" column="0">
-         <widget class="QWidget" name="Thursday" native="true">
-          <layout class="QVBoxLayout" name="verticalLayout_10">
-           <item>
-            <widget class="QLabel" name="Thu">
-             <property name="font">
-              <font>
-               <pointsize>14</pointsize>
-              </font>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QLable { font-size: 14px; }</string>
-             </property>
-             <property name="text">
-              <string>Четверг</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QTableWidget" name="Thu_school"/>
-           </item>
-           <item>
-            <widget class="QTableWidget" name="Thu_note">
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>80</height>
-              </size>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </widget>
-        </item>
-        <item row="1" column="1">
+        <item row="2" column="1">
          <widget class="QWidget" name="Friday" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>240</width>
+            <height>370</height>
+           </size>
+          </property>
           <layout class="QVBoxLayout" name="verticalLayout_11">
            <item>
             <widget class="QLabel" name="Fri">
@@ -582,45 +594,32 @@
           </layout>
          </widget>
         </item>
-        <item row="1" column="2">
-         <widget class="QWidget" name="Saturday" native="true">
-          <layout class="QVBoxLayout" name="verticalLayout_12">
+        <item row="2" column="3">
+         <widget class="QWidget" name="Clear_Del" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>190</width>
+            <height>0</height>
+           </size>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
            <item>
-            <widget class="QLabel" name="Sat">
-             <property name="font">
-              <font>
-               <pointsize>14</pointsize>
-              </font>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QLable { font-size: 14px; }</string>
-             </property>
-             <property name="text">
-              <string>Суббота</string>
-             </property>
-            </widget>
+            <widget class="QWidget" name="fake3" native="true"/>
            </item>
            <item>
-            <widget class="QTableWidget" name="Sat_school"/>
-           </item>
-           <item>
-            <widget class="QTableWidget" name="Sat_note">
+            <widget class="QGroupBox" name="Clear">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
              <property name="maximumSize">
               <size>
                <width>16777215</width>
-               <height>80</height>
+               <height>170</height>
               </size>
              </property>
-            </widget>
-           </item>
-          </layout>
-         </widget>
-        </item>
-        <item row="1" column="3">
-         <widget class="QWidget" name="Del_Space" native="true">
-          <layout class="QVBoxLayout" name="verticalLayout_14">
-           <item>
-            <widget class="QGroupBox" name="Del">
              <property name="font">
               <font>
                <pointsize>10</pointsize>
@@ -629,7 +628,7 @@
               </font>
              </property>
              <property name="title">
-              <string>Удалить предмет</string>
+              <string>Убрать предмет</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
@@ -693,11 +692,6 @@
                   <string>Сб</string>
                  </property>
                 </item>
-                <item>
-                 <property name="text">
-                  <string>Вс</string>
-                 </property>
-                </item>
                </widget>
               </item>
               <item>
@@ -710,7 +704,7 @@
                 </property>
                 <item>
                  <property name="text">
-                  <string>Любой</string>
+                  <string>Все</string>
                  </property>
                 </item>
                 <item>
@@ -756,7 +750,92 @@
                </widget>
               </item>
               <item>
-               <widget class="QComboBox" name="subjects">
+               <widget class="QPushButton" name="clear_but">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>-1</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    padding:10px;
+    color: #fffff;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #3873d9;
+    background-color: white; }
+
+QPushButton:hover{
+	background-color: rgb(171, 211, 247);
+	effect = QtWidgets.QGraphicsDropShadowEffect(QPushButton)
+	effect.setOffset(0, 0)
+	effect.setBlurRadius(20)
+	effect.setColor(QColor(57, 219, 255))
+	QPushButton.setGraphicsEffect(effect)
+}</string>
+                </property>
+                <property name="text">
+                 <string>Убрать</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="fake2" native="true"/>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="Del">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>170</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="title">
+              <string>Удалить предмет</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_18">
+              <property name="spacing">
+               <number>6</number>
+              </property>
+              <property name="leftMargin">
+               <number>9</number>
+              </property>
+              <property name="topMargin">
+               <number>9</number>
+              </property>
+              <property name="rightMargin">
+               <number>9</number>
+              </property>
+              <property name="bottomMargin">
+               <number>9</number>
+              </property>
+              <item>
+               <widget class="QComboBox" name="choose_obj3">
                 <property name="minimumSize">
                  <size>
                   <width>0</width>
@@ -770,14 +849,12 @@
                 <property name="minimumSize">
                  <size>
                   <width>0</width>
-                  <height>30</height>
+                  <height>40</height>
                  </size>
                 </property>
                 <property name="font">
                  <font>
                   <pointsize>-1</pointsize>
-                  <weight>50</weight>
-                  <bold>false</bold>
                  </font>
                 </property>
                 <property name="styleSheet">
@@ -787,7 +864,16 @@
     font-size: 18px;
     border-radius: 10px;
     border: 1px solid #3873d9;
-    background-color: white; }</string>
+    background-color: white; }
+
+QPushButton:hover{
+	background-color: rgb(171, 211, 247);
+	effect = QtWidgets.QGraphicsDropShadowEffect(QPushButton)
+	effect.setOffset(0, 0)
+	effect.setBlurRadius(20)
+	effect.setColor(QColor(57, 219, 255))
+	QPushButton.setGraphicsEffect(effect)
+}</string>
                 </property>
                 <property name="text">
                  <string>Удалить</string>
@@ -797,27 +883,10 @@
              </layout>
             </widget>
            </item>
-           <item>
-            <widget class="QPushButton" name="Space">
-             <property name="styleSheet">
-              <string notr="true">QPushButton {
-    padding:10px;
-    color: #fffff;
-    font-size: 18px;
-    border-radius: 10px;
-    border: 1px solid #3873d9;
-    background-color: white; }</string>
-             </property>
-             <property name="text">
-              <string>Обнуление</string>
-             </property>
-            </widget>
-           </item>
           </layout>
          </widget>
         </item>
        </layout>
-       <zorder>Del_Space</zorder>
        <zorder>Add_Upd</zorder>
        <zorder>Saturday</zorder>
        <zorder>Friday</zorder>
@@ -825,321 +894,414 @@
        <zorder>Wednesday</zorder>
        <zorder>Tuesday</zorder>
        <zorder>Monday</zorder>
+       <zorder>Clear_Del</zorder>
       </widget>
-      <widget class="QWidget" name="tab_2">
+      <widget class="QWidget" name="note">
        <attribute name="title">
         <string>Заметки</string>
        </attribute>
        <layout class="QVBoxLayout" name="verticalLayout_6">
         <item>
-         <widget class="QWidget" name="widget_14" native="true">
-          <widget class="QTabWidget" name="tabWidget_2">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>430</y>
-             <width>681</width>
-             <height>251</height>
-            </rect>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="currentIndex">
-            <number>2</number>
-           </property>
-           <widget class="QWidget" name="tab_3">
-            <attribute name="title">
-             <string>Сделать</string>
-            </attribute>
-            <layout class="QVBoxLayout" name="verticalLayout_3">
-             <item>
-              <widget class="QWidget" name="widget_12" native="true">
-               <widget class="QPushButton" name="pushButton_5">
-                <property name="geometry">
-                 <rect>
-                  <x>10</x>
-                  <y>10</y>
-                  <width>211</width>
-                  <height>51</height>
-                 </rect>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton {
-    padding:10px;
-    color: #fffff;
-    font-size: 18px;
-    border-radius: 10px;
-    border: 1px solid #3873d9;
-    background-color: white; }</string>
-                </property>
-                <property name="text">
-                 <string>Выполнено</string>
-                </property>
-               </widget>
-               <widget class="QDateTimeEdit" name="dateTimeEdit_4">
-                <property name="geometry">
-                 <rect>
-                  <x>10</x>
-                  <y>70</y>
-                  <width>211</width>
-                  <height>51</height>
-                 </rect>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>12</pointsize>
-                 </font>
-                </property>
-               </widget>
-               <widget class="QComboBox" name="comboBox">
-                <property name="geometry">
-                 <rect>
-                  <x>240</x>
-                  <y>10</y>
-                  <width>411</width>
-                  <height>51</height>
-                 </rect>
-                </property>
-               </widget>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-           <widget class="QWidget" name="tab_4">
-            <attribute name="title">
-             <string>Добавить</string>
-            </attribute>
-            <layout class="QVBoxLayout" name="verticalLayout_4">
-             <item>
-              <widget class="QWidget" name="widget_10" native="true">
-               <widget class="QPlainTextEdit" name="plainTextEdit">
-                <property name="geometry">
-                 <rect>
-                  <x>230</x>
-                  <y>10</y>
-                  <width>411</width>
-                  <height>111</height>
-                 </rect>
-                </property>
-               </widget>
-               <widget class="QPushButton" name="pushButton_6">
-                <property name="geometry">
-                 <rect>
-                  <x>10</x>
-                  <y>10</y>
-                  <width>211</width>
-                  <height>51</height>
-                 </rect>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton {
-    padding:10px;
-    color: #fffff;
-    font-size: 18px;
-    border-radius: 10px;
-    border: 1px solid #3873d9;
-    background-color: white; }</string>
-                </property>
-                <property name="text">
-                 <string>Добавить</string>
-                </property>
-               </widget>
-               <widget class="QDateTimeEdit" name="dateTimeEdit_3">
-                <property name="geometry">
-                 <rect>
-                  <x>10</x>
-                  <y>70</y>
-                  <width>211</width>
-                  <height>51</height>
-                 </rect>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>12</pointsize>
-                 </font>
-                </property>
-               </widget>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-           <widget class="QWidget" name="tab_7">
-            <attribute name="title">
-             <string>Редактрировать</string>
-            </attribute>
-            <layout class="QVBoxLayout" name="verticalLayout_5">
-             <item>
-              <widget class="QWidget" name="widget_11" native="true">
-               <widget class="QPushButton" name="pushButton_9">
-                <property name="geometry">
-                 <rect>
-                  <x>10</x>
-                  <y>10</y>
-                  <width>211</width>
-                  <height>51</height>
-                 </rect>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton {
-    padding:10px;
-    color: #fffff;
-    font-size: 18px;
-    border-radius: 10px;
-    border: 1px solid #3873d9;
-    background-color: white; }</string>
-                </property>
-                <property name="text">
-                 <string>Обновить</string>
-                </property>
-               </widget>
-               <widget class="QDateTimeEdit" name="dateTimeEdit_5">
-                <property name="geometry">
-                 <rect>
-                  <x>10</x>
-                  <y>70</y>
-                  <width>211</width>
-                  <height>51</height>
-                 </rect>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>12</pointsize>
-                 </font>
-                </property>
-               </widget>
-               <widget class="QComboBox" name="comboBox_9">
-                <property name="geometry">
-                 <rect>
-                  <x>10</x>
-                  <y>130</y>
-                  <width>211</width>
-                  <height>51</height>
-                 </rect>
-                </property>
-               </widget>
-               <widget class="QPlainTextEdit" name="plainTextEdit_3">
-                <property name="geometry">
-                 <rect>
-                  <x>240</x>
-                  <y>10</y>
-                  <width>411</width>
-                  <height>171</height>
-                 </rect>
-                </property>
-               </widget>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </widget>
-          <widget class="QGroupBox" name="groupBox_4">
-           <property name="geometry">
-            <rect>
-             <x>710</x>
-             <y>430</y>
-             <width>261</width>
-             <height>251</height>
-            </rect>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>10</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="title">
-            <string> Просмотр заметки</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-           </property>
-           <widget class="QWidget" name="widget_13" native="true">
-            <property name="geometry">
-             <rect>
-              <x>10</x>
-              <y>20</y>
-              <width>241</width>
-              <height>221</height>
-             </rect>
-            </property>
-            <widget class="QComboBox" name="comboBox_5">
-             <property name="geometry">
-              <rect>
-               <x>10</x>
-               <y>10</y>
-               <width>221</width>
-               <height>31</height>
-              </rect>
+         <widget class="QTableWidget" name="maintable">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>960</width>
+            <height>260</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>280</height>
+           </size>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QTabWidget" name="tabWidget_2">
+             <property name="minimumSize">
+              <size>
+               <width>675</width>
+               <height>0</height>
+              </size>
              </property>
-             <item>
-              <property name="text">
-               <string>За всё время</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>За месяц</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>За неделю</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>На опред. дату</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>На опред. время</string>
-              </property>
-             </item>
-            </widget>
-            <widget class="QPushButton" name="pushButton_2">
-             <property name="geometry">
-              <rect>
-               <x>10</x>
-               <y>170</y>
-               <width>221</width>
-               <height>41</height>
-              </rect>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>250</height>
+              </size>
              </property>
              <property name="font">
               <font>
-               <pointsize>-1</pointsize>
+               <pointsize>10</pointsize>
               </font>
              </property>
-             <property name="styleSheet">
-              <string notr="true">QPushButton {
+             <property name="currentIndex">
+              <number>2</number>
+             </property>
+             <widget class="QWidget" name="Doing">
+              <attribute name="title">
+               <string>Сделать</string>
+              </attribute>
+              <layout class="QVBoxLayout" name="verticalLayout_3">
+               <item>
+                <widget class="QWidget" name="default1" native="true">
+                 <widget class="QPushButton" name="complete">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>10</y>
+                    <width>211</width>
+                    <height>51</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
     padding:10px;
     color: #fffff;
     font-size: 18px;
     border-radius: 10px;
     border: 1px solid #3873d9;
-    background-color: white; }</string>
-             </property>
-             <property name="text">
-              <string>Показать</string>
-             </property>
+    background-color: white; }
+
+QPushButton:hover{
+	background-color: rgb(171, 211, 247);
+	effect = QtWidgets.QGraphicsDropShadowEffect(QPushButton)
+	effect.setOffset(0, 0)
+	effect.setBlurRadius(20)
+	effect.setColor(QColor(57, 219, 255))
+	QPushButton.setGraphicsEffect(effect)
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Выполнено</string>
+                  </property>
+                 </widget>
+                 <widget class="QDateTimeEdit" name="date_1">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>70</y>
+                    <width>211</width>
+                    <height>51</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                 </widget>
+                 <widget class="QComboBox" name="choose">
+                  <property name="geometry">
+                   <rect>
+                    <x>240</x>
+                    <y>10</y>
+                    <width>411</width>
+                    <height>51</height>
+                   </rect>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="Adding">
+              <attribute name="title">
+               <string>Добавить</string>
+              </attribute>
+              <layout class="QHBoxLayout" name="horizontalLayout_5">
+               <item>
+                <widget class="QWidget" name="default2" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>233</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <widget class="QPushButton" name="added">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>10</y>
+                    <width>211</width>
+                    <height>51</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+    padding:10px;
+    color: #fffff;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #3873d9;
+    background-color: white; }
+
+QPushButton:hover{
+	background-color: rgb(171, 211, 247);
+	effect = QtWidgets.QGraphicsDropShadowEffect(QPushButton)
+	effect.setOffset(0, 0)
+	effect.setBlurRadius(20)
+	effect.setColor(QColor(57, 219, 255))
+	QPushButton.setGraphicsEffect(effect)
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Добавить</string>
+                  </property>
+                 </widget>
+                 <widget class="QDateTimeEdit" name="date_2">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>70</y>
+                    <width>211</width>
+                    <height>51</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPlainTextEdit" name="write"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="Upating">
+              <attribute name="title">
+               <string>Редактрировать</string>
+              </attribute>
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <item>
+                <widget class="QWidget" name="default3" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>233</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <widget class="QPushButton" name="update">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>10</y>
+                    <width>211</width>
+                    <height>51</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+    padding:10px;
+    color: #fffff;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #3873d9;
+    background-color: white; }
+
+QPushButton:hover{
+	background-color: rgb(171, 211, 247);
+	effect = QtWidgets.QGraphicsDropShadowEffect(QPushButton)
+	effect.setOffset(0, 0)
+	effect.setBlurRadius(20)
+	effect.setColor(QColor(57, 219, 255))
+	QPushButton.setGraphicsEffect(effect)
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Обновить</string>
+                  </property>
+                 </widget>
+                 <widget class="QDateTimeEdit" name="date_3">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>70</y>
+                    <width>211</width>
+                    <height>51</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                 </widget>
+                 <widget class="QComboBox" name="choose_2">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>130</y>
+                    <width>211</width>
+                    <height>51</height>
+                   </rect>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPlainTextEdit" name="write_2"/>
+               </item>
+              </layout>
+             </widget>
             </widget>
-           </widget>
-          </widget>
-          <widget class="QTableWidget" name="tableWidget_13">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>10</y>
-             <width>961</width>
-             <height>401</height>
-            </rect>
-           </property>
-          </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="viewnote">
+             <property name="minimumSize">
+              <size>
+               <width>260</width>
+               <height>250</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>260</width>
+               <height>250</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="title">
+              <string> Просмотр заметки</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+             <widget class="QWidget" name="default4" native="true">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>241</width>
+                <height>221</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    padding:10px;
+    color: #fffff;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #3873d9;
+    background-color: white; }
+
+QPushButton:before {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 42px;
+	background: rgba(255,255,255,0.3);
+	border-radius: 5px;
+	transition: all 2s ease;
+}
+
+QPushButton:hover:before {
+	width: 100%;
+}</string>
+              </property>
+              <widget class="QComboBox" name="choosedate">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>10</y>
+                 <width>221</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <item>
+                <property name="text">
+                 <string>За всё время</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>За месяц</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>За неделю</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>На опред. дату</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>На опред. время</string>
+                </property>
+               </item>
+              </widget>
+              <widget class="QPushButton" name="showing">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>170</y>
+                 <width>221</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>-1</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    padding:10px;
+    color: #fffff;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #3873d9;
+    background-color: white; }
+
+QPushButton:hover{
+	background-color: rgb(171, 211, 247);
+	effect = QtWidgets.QGraphicsDropShadowEffect(QPushButton)
+	effect.setOffset(0, 0)
+	effect.setBlurRadius(20)
+	effect.setColor(QColor(57, 219, 255))
+	QPushButton.setGraphicsEffect(effect)
+}</string>
+               </property>
+               <property name="text">
+                <string>Показать</string>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+           </item>
+          </layout>
          </widget>
         </item>
        </layout>
