@@ -21,10 +21,14 @@ class MyWidget(QMainWindow):  # Ui_MainWindow
         self.cursor = self.connection.cursor()
 
         # РАСПИСАНИЕ
-        self.add_but.clicked.connect(self.add)  # ДОБАВЛЕНИЕ ПРЕДМЕТОВ
-        self.upd_but.clicked.connect(self.upd)  # ИЗМЕНЕНИЕ ПРЕДМЕТОВ
-        self.clear_but.clicked.connect(self.clear)  # УБИРАНИЕ ПРЕДМЕТОВ
-        self.del_but.clicked.connect(self.delete)  # УДАЛЕНИЕ ПРЕДМЕТОВ
+        self.add_but.clicked.connect(self.add)  # ДОБАВЛЕНИЕ
+        self.upd_but.clicked.connect(self.upd)  # ИЗМЕНЕНИЕ
+        self.clear_but.clicked.connect(self.clear)  # УБИРАНИЕ
+        self.del_but.clicked.connect(self.delete)  # УДАЛЕНИЕ
+
+        self.check_but1.clicked.connect(self.check)  # ВЫДЕЛЕНИЕ
+        self.check_but2.clicked.connect(self.check)
+        self.check_but3.clicked.connect(self.check)
 
         # ДАННЫЕ ТАБЛИЦЫ
         self.table()
@@ -54,15 +58,15 @@ class MyWidget(QMainWindow):  # Ui_MainWindow
                 for i, row in enumerate(subjects):
                     day.setRowCount(day.rowCount() + 1)
                     for j, elem in enumerate(row):
-                        day.setItem(i, j, QTableWidgetItem(str(elem)))
+                        day.setItem(i, j, QTableWidgetItem(elem))
                 day.horizontalHeader().setStretchLastSection(True)
 
-            # ЗАПОЛНЕНИЕ ВЫПАДАЮЩИХ СПИСКОВ ADD / UPD / DEL
+            # ЗАПОЛНЕНИЕ ВЫПАДАЮЩИХ СПИСКОВ ADD / UPD / DEL / CHECK
             try:
                 with self.connection:
                     lessons = self.cursor.execute('SELECT `name` FROM `lessons`').fetchall()
                 lessons = [i[0] for i in lessons]
-                for choose_obj in [self.choose_obj1, self.choose_obj2, self.choose_obj3]:
+                for choose_obj in [self.choose_obj1, self.choose_obj2, self.choose_obj3, self.choose_obj4]:
                     choose_obj.clear()
                     if choose_obj == self.choose_obj1:
                         choose_obj.insertItem(0, "Новый предмет")
@@ -200,6 +204,28 @@ class MyWidget(QMainWindow):  # Ui_MainWindow
                         with self.connection:
                             self.cursor.execute(f"UPDATE `timetable` SET `less_{less}` = ? WHERE `id` = ?", (None, day))
         self.table()
+
+    def check(self):
+        index, sender = self.choose_obj4.currentText(), self.sender().text()
+        with self.connection:
+            ids = self.cursor.execute("SELECT `id` FROM `lessons` WHERE `name` = ?", (index,)).fetchone()[0]
+
+        tables = [self.Mon_school, self.Tue_school, self.Wed_school,
+                  self.Thu_school, self.Fri_school, self.Sat_school]
+
+        for day in range(1, 7):
+            with self.connection:
+                lessons = self.cursor.execute("SELECT * FROM `timetable` WHERE `id` = ?", (day,)).fetchone()
+            lessons = list(lessons)[2:]
+            if ids in lessons:
+                for less in range(1, 9):
+                    if ids == lessons[less - 1]:
+                        if sender == "Выделить":
+                            tables[day - 1].item(less - 1, 0).setBackground(QtGui.QColor(0, 150, 100))
+                        elif sender == "Отменить":
+                            tables[day - 1].item(less - 1, 0).setBackground(QtGui.QColor(255, 255, 255))
+                        else:
+                            self.table()
 
     def notes(self):
         pass
