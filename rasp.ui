@@ -54,6 +54,8 @@
              <property name="font">
               <font>
                <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
               </font>
              </property>
              <property name="styleSheet">
@@ -62,17 +64,38 @@
              <property name="text">
               <string>Вторник</string>
              </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
             </widget>
            </item>
            <item>
-            <widget class="QTableWidget" name="Tue_school"/>
+            <widget class="QTableWidget" name="Tue_school">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>242</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>242</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+            </widget>
            </item>
            <item>
             <widget class="QTableWidget" name="Tue_note">
              <property name="maximumSize">
               <size>
                <width>16777215</width>
-               <height>80</height>
+               <height>16777215</height>
               </size>
              </property>
             </widget>
@@ -94,6 +117,8 @@
              <property name="font">
               <font>
                <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
               </font>
              </property>
              <property name="styleSheet">
@@ -102,17 +127,38 @@
              <property name="text">
               <string>Среда</string>
              </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
             </widget>
            </item>
            <item>
-            <widget class="QTableWidget" name="Wed_school"/>
+            <widget class="QTableWidget" name="Wed_school">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>242</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>242</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+            </widget>
            </item>
            <item>
             <widget class="QTableWidget" name="Wed_note">
              <property name="maximumSize">
               <size>
                <width>16777215</width>
-               <height>80</height>
+               <height>16777215</height>
               </size>
              </property>
             </widget>
@@ -134,6 +180,8 @@
              <property name="font">
               <font>
                <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
               </font>
              </property>
              <property name="styleSheet">
@@ -142,17 +190,38 @@
              <property name="text">
               <string>Четверг</string>
              </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
             </widget>
            </item>
            <item>
-            <widget class="QTableWidget" name="Thu_school"/>
+            <widget class="QTableWidget" name="Thu_school">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>242</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>242</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+            </widget>
            </item>
            <item>
             <widget class="QTableWidget" name="Thu_note">
              <property name="maximumSize">
               <size>
                <width>16777215</width>
-               <height>80</height>
+               <height>16777215</height>
               </size>
              </property>
             </widget>
@@ -174,6 +243,8 @@
              <property name="font">
               <font>
                <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
               </font>
              </property>
              <property name="styleSheet">
@@ -182,17 +253,38 @@
              <property name="text">
               <string>Суббота</string>
              </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
             </widget>
            </item>
            <item>
-            <widget class="QTableWidget" name="Sat_school"/>
+            <widget class="QTableWidget" name="Sat_school">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>242</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>242</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+            </widget>
            </item>
            <item>
             <widget class="QTableWidget" name="Sat_note">
              <property name="maximumSize">
               <size>
                <width>16777215</width>
-               <height>80</height>
+               <height>16777215</height>
               </size>
              </property>
             </widget>
@@ -214,6 +306,8 @@
              <property name="font">
               <font>
                <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
               </font>
              </property>
              <property name="styleSheet">
@@ -222,17 +316,50 @@
              <property name="text">
               <string>Понедельник</string>
              </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
             </widget>
            </item>
            <item>
-            <widget class="QTableWidget" name="Mon_school"/>
+            <widget class="QTableWidget" name="Mon_school">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>242</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>242</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="showGrid">
+              <bool>true</bool>
+             </property>
+             <property name="gridStyle">
+              <enum>Qt::SolidLine</enum>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+             <property name="cornerButtonEnabled">
+              <bool>true</bool>
+             </property>
+            </widget>
            </item>
            <item>
             <widget class="QTableWidget" name="Mon_note">
              <property name="maximumSize">
               <size>
                <width>16777215</width>
-               <height>80</height>
+               <height>16777215</height>
               </size>
              </property>
              <property name="baseSize">
@@ -445,6 +572,8 @@ QPushButton:hover{
              <property name="font">
               <font>
                <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
               </font>
              </property>
              <property name="styleSheet">
@@ -453,17 +582,38 @@ QPushButton:hover{
              <property name="text">
               <string>Пятница</string>
              </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
             </widget>
            </item>
            <item>
-            <widget class="QTableWidget" name="Fri_school"/>
+            <widget class="QTableWidget" name="Fri_school">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>242</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>242</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+            </widget>
            </item>
            <item>
             <widget class="QTableWidget" name="Fri_note">
              <property name="maximumSize">
               <size>
                <width>16777215</width>
-               <height>80</height>
+               <height>16777215</height>
               </size>
              </property>
             </widget>
@@ -1084,26 +1234,44 @@ QPushButton:hover{
               </font>
              </property>
              <property name="currentIndex">
-              <number>2</number>
+              <number>0</number>
              </property>
              <widget class="QWidget" name="Doing">
               <attribute name="title">
                <string>Сделать</string>
               </attribute>
-              <layout class="QVBoxLayout" name="verticalLayout_3">
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
                <item>
-                <widget class="QWidget" name="default1" native="true">
-                 <widget class="QPushButton" name="complete">
-                  <property name="geometry">
-                   <rect>
-                    <x>10</x>
-                    <y>10</y>
-                    <width>211</width>
-                    <height>51</height>
-                   </rect>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">QPushButton {
+                <widget class="QWidget" name="widget_2" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>231</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>231</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_13">
+                  <item>
+                   <widget class="QPushButton" name="complete">
+                    <property name="minimumSize">
+                     <size>
+                      <width>211</width>
+                      <height>51</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>211</width>
+                      <height>51</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
     padding:10px;
     color: #fffff;
     font-size: 18px;
@@ -1119,36 +1287,73 @@ QPushButton:hover{
 	effect.setColor(QColor(57, 219, 255))
 	QPushButton.setGraphicsEffect(effect)
 }</string>
-                  </property>
-                  <property name="text">
-                   <string>Выполнено</string>
-                  </property>
-                 </widget>
-                 <widget class="QDateTimeEdit" name="date_1">
-                  <property name="geometry">
-                   <rect>
-                    <x>10</x>
-                    <y>70</y>
-                    <width>211</width>
-                    <height>51</height>
-                   </rect>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>12</pointsize>
-                   </font>
-                  </property>
-                 </widget>
-                 <widget class="QComboBox" name="choose">
-                  <property name="geometry">
-                   <rect>
-                    <x>240</x>
-                    <y>10</y>
-                    <width>411</width>
-                    <height>51</height>
-                   </rect>
-                  </property>
-                 </widget>
+                    </property>
+                    <property name="text">
+                     <string>Выполнено</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QDateTimeEdit" name="date_1">
+                    <property name="minimumSize">
+                     <size>
+                      <width>211</width>
+                      <height>51</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>211</width>
+                      <height>51</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <weight>50</weight>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="layoutDirection">
+                     <enum>Qt::LeftToRight</enum>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="buttonSymbols">
+                     <enum>QAbstractSpinBox::UpDownArrows</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QWidget" name="fake4" native="true"/>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QWidget" name="widget_4" native="true">
+                 <layout class="QVBoxLayout" name="verticalLayout_17">
+                  <item>
+                   <widget class="QComboBox" name="choose">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>51</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>51</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QWidget" name="fake6" native="true"/>
+                  </item>
+                 </layout>
                 </widget>
                </item>
               </layout>
@@ -1162,21 +1367,34 @@ QPushButton:hover{
                 <widget class="QWidget" name="default2" native="true">
                  <property name="minimumSize">
                   <size>
-                   <width>233</width>
+                   <width>231</width>
                    <height>0</height>
                   </size>
                  </property>
-                 <widget class="QPushButton" name="added">
-                  <property name="geometry">
-                   <rect>
-                    <x>10</x>
-                    <y>10</y>
-                    <width>211</width>
-                    <height>51</height>
-                   </rect>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">QPushButton {
+                 <layout class="QVBoxLayout" name="verticalLayout_3">
+                  <item>
+                   <widget class="QPushButton" name="added">
+                    <property name="minimumSize">
+                     <size>
+                      <width>211</width>
+                      <height>51</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>211</width>
+                      <height>51</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>-1</pointsize>
+                      <weight>50</weight>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
     padding:10px;
     color: #fffff;
     font-size: 18px;
@@ -1192,26 +1410,42 @@ QPushButton:hover{
 	effect.setColor(QColor(57, 219, 255))
 	QPushButton.setGraphicsEffect(effect)
 }</string>
-                  </property>
-                  <property name="text">
-                   <string>Добавить</string>
-                  </property>
-                 </widget>
-                 <widget class="QDateTimeEdit" name="date_2">
-                  <property name="geometry">
-                   <rect>
-                    <x>10</x>
-                    <y>70</y>
-                    <width>211</width>
-                    <height>51</height>
-                   </rect>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>12</pointsize>
-                   </font>
-                  </property>
-                 </widget>
+                    </property>
+                    <property name="text">
+                     <string>Добавить</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QDateTimeEdit" name="date_2">
+                    <property name="minimumSize">
+                     <size>
+                      <width>211</width>
+                      <height>51</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>211</width>
+                      <height>51</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <weight>50</weight>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QWidget" name="fake7" native="true"/>
+                  </item>
+                 </layout>
                 </widget>
                </item>
                <item>
@@ -1228,21 +1462,34 @@ QPushButton:hover{
                 <widget class="QWidget" name="default3" native="true">
                  <property name="minimumSize">
                   <size>
-                   <width>233</width>
+                   <width>231</width>
                    <height>0</height>
                   </size>
                  </property>
-                 <widget class="QPushButton" name="update">
-                  <property name="geometry">
-                   <rect>
-                    <x>10</x>
-                    <y>10</y>
-                    <width>211</width>
-                    <height>51</height>
-                   </rect>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">QPushButton {
+                 <layout class="QVBoxLayout" name="verticalLayout_19">
+                  <item>
+                   <widget class="QPushButton" name="update">
+                    <property name="minimumSize">
+                     <size>
+                      <width>211</width>
+                      <height>51</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>211</width>
+                      <height>51</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>-1</pointsize>
+                      <weight>50</weight>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
     padding:10px;
     color: #fffff;
     font-size: 18px;
@@ -1258,36 +1505,58 @@ QPushButton:hover{
 	effect.setColor(QColor(57, 219, 255))
 	QPushButton.setGraphicsEffect(effect)
 }</string>
-                  </property>
-                  <property name="text">
-                   <string>Обновить</string>
-                  </property>
-                 </widget>
-                 <widget class="QDateTimeEdit" name="date_3">
-                  <property name="geometry">
-                   <rect>
-                    <x>10</x>
-                    <y>70</y>
-                    <width>211</width>
-                    <height>51</height>
-                   </rect>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>12</pointsize>
-                   </font>
-                  </property>
-                 </widget>
-                 <widget class="QComboBox" name="choose_2">
-                  <property name="geometry">
-                   <rect>
-                    <x>10</x>
-                    <y>130</y>
-                    <width>211</width>
-                    <height>51</height>
-                   </rect>
-                  </property>
-                 </widget>
+                    </property>
+                    <property name="text">
+                     <string>Обновить</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QDateTimeEdit" name="date_3">
+                    <property name="minimumSize">
+                     <size>
+                      <width>211</width>
+                      <height>51</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>211</width>
+                      <height>51</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <weight>50</weight>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="choose_2">
+                    <property name="minimumSize">
+                     <size>
+                      <width>211</width>
+                      <height>51</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>211</width>
+                      <height>51</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QWidget" name="fake8" native="true"/>
+                  </item>
+                 </layout>
                 </widget>
                </item>
                <item>
@@ -1324,98 +1593,69 @@ QPushButton:hover{
              <property name="alignment">
               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
              </property>
-             <widget class="QWidget" name="default4" native="true">
-              <property name="geometry">
-               <rect>
-                <x>10</x>
-                <y>20</y>
-                <width>241</width>
-                <height>221</height>
-               </rect>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QPushButton {
-    padding:10px;
-    color: #fffff;
-    font-size: 18px;
-    border-radius: 10px;
-    border: 1px solid #3873d9;
-    background-color: white; }
-
-QPushButton:before {
-	content:'';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 0;
-	height: 42px;
-	background: rgba(255,255,255,0.3);
-	border-radius: 5px;
-	transition: all 2s ease;
-}
-
-QPushButton:hover:before {
-	width: 100%;
-}</string>
-              </property>
-              <widget class="QComboBox" name="choosedate">
-               <property name="geometry">
-                <rect>
-                 <x>10</x>
-                 <y>10</y>
-                 <width>221</width>
-                 <height>31</height>
-                </rect>
-               </property>
-               <property name="font">
-                <font>
-                 <pointsize>10</pointsize>
-                 <weight>75</weight>
-                 <bold>true</bold>
-                </font>
-               </property>
-               <item>
-                <property name="text">
-                 <string>За всё время</string>
+             <layout class="QVBoxLayout" name="verticalLayout_20">
+              <item>
+               <widget class="QComboBox" name="choosedate">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>31</height>
+                 </size>
                 </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>За месяц</string>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>31</height>
+                 </size>
                 </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>За неделю</string>
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
                 </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>На опред. дату</string>
+                <item>
+                 <property name="text">
+                  <string>За всё время</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>На месяц</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>На неделю</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="fake9" native="true"/>
+              </item>
+              <item>
+               <widget class="QPushButton" name="showing">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>41</height>
+                 </size>
                 </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>На опред. время</string>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>41</height>
+                 </size>
                 </property>
-               </item>
-              </widget>
-              <widget class="QPushButton" name="showing">
-               <property name="geometry">
-                <rect>
-                 <x>10</x>
-                 <y>170</y>
-                 <width>221</width>
-                 <height>41</height>
-                </rect>
-               </property>
-               <property name="font">
-                <font>
-                 <pointsize>-1</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QPushButton {
+                <property name="font">
+                 <font>
+                  <pointsize>-1</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
     padding:10px;
     color: #fffff;
     font-size: 18px;
@@ -1431,12 +1671,13 @@ QPushButton:hover{
 	effect.setColor(QColor(57, 219, 255))
 	QPushButton.setGraphicsEffect(effect)
 }</string>
-               </property>
-               <property name="text">
-                <string>Показать</string>
-               </property>
-              </widget>
-             </widget>
+                </property>
+                <property name="text">
+                 <string>Показать</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
             </widget>
            </item>
           </layout>

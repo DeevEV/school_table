@@ -4,7 +4,6 @@ import sys
 
 from PyQt5 import QtCore, QtWidgets, QtGui, uic
 from PyQt5.QtWidgets import QApplication, QMessageBox, QMainWindow, QTableWidgetItem
-from PyQt5.QtWidgets import QWidget, QTableView, QTableWidget, QComboBox
 
 if hasattr(QtCore.Qt, 'AA_EnableHighDpiScaling'):
     QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling, True)
@@ -30,6 +29,9 @@ class MyWidget(QMainWindow):  # Ui_MainWindow
         self.check_but2.clicked.connect(self.check)
         self.check_but3.clicked.connect(self.check)
 
+        # ЗАМЕТКИ
+        self.complete.clicked.connect(self.add_notes)  # ДОБАВЛЕНИЕ
+
         # ДАННЫЕ ТАБЛИЦЫ
         self.table()
 
@@ -52,7 +54,7 @@ class MyWidget(QMainWindow):  # Ui_MainWindow
                             obj = ""
                         subjects.append((obj, ))
                 day.setColumnCount(1)
-                day.setHorizontalHeaderLabels(["Предмет"])
+                day.horizontalHeader().setVisible(False)
                 day.setRowCount(0)
 
                 for i, row in enumerate(subjects):
@@ -75,6 +77,29 @@ class MyWidget(QMainWindow):  # Ui_MainWindow
                         choose_obj.insertItems(0, lessons)
             except Exception:
                 pass
+
+            # ЗАПОЛНЕНИЕ ВЫПАДАЮЩИХ СПИСКОВ CHOOSE 1 / 2
+            try:
+                with self.connection:
+                    notes = self.cursor.execute('SELECT `note` FROM `notes`').fetchall()
+                notes = [i[0] for i in notes]
+                for choose_obj in [self.choose, self.choose_2]:
+                    choose_obj.clear()
+                    if self.choose == choose_obj:
+                        choose_obj.insertItem(0, "Все за этот день!")
+                        choose_obj.insertItems(1, notes)
+                    else:
+                        choose_obj.insertItems(0, notes)
+            except Exception:
+                pass
+
+            # НАСТРОЙКА ДИСПЛЕЕВ ДАТ
+            now = QtCore.QDateTime.currentDateTime()
+            for date in [self.date_1, self.date_2, self.date_3]:
+                date.setDateTime(now)
+                date.setDateRange(QtCore.QDate.currentDate().addDays(-365), QtCore.QDate.currentDate().addDays(365))
+                if self.date_1 == date:
+                    date.setDisplayFormat("dd.MM.yyyy")
 
             # ВСЕ ЗАМЕТКИ
             with self.connection:
@@ -115,6 +140,7 @@ class MyWidget(QMainWindow):  # Ui_MainWindow
         except Exception:
             QMessageBox.about(self, 'Ошибка!', "Таблица данных не найдена!")
 
+    # РАСПИСАНИЕ
     def add(self):
         day = self.weekday1.currentIndex()
         obj = self.object1.currentIndex()
@@ -227,8 +253,11 @@ class MyWidget(QMainWindow):  # Ui_MainWindow
                         else:
                             self.table()
 
-    def notes(self):
-        pass
+    # ЗАМЕТКИ
+    def add_notes(self):
+        ind = self.choose.currentIndex()
+        if ind:
+            pass
 
     def closeEvent(self, event):
         self.connection.close()
