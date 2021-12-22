@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1192</width>
-    <height>809</height>
+    <width>1069</width>
+    <height>813</height>
    </rect>
   </property>
   <property name="font">
@@ -23,8 +23,8 @@
    <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout_2">
-    <item>
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
      <widget class="QTabWidget" name="tabWidget">
       <property name="font">
        <font>
@@ -384,6 +384,48 @@
           <layout class="QVBoxLayout" name="verticalLayout">
            <item>
             <widget class="QWidget" name="fake2" native="true"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="get_note">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>-1</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    padding:10px;
+    color: #fffff;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #3873d9;
+    background-color: white; }
+
+QPushButton:hover{
+	background-color: rgb(171, 211, 247);
+	effect = QtWidgets.QGraphicsDropShadowEffect(QPushButton)
+	effect.setOffset(0, 0)
+	effect.setBlurRadius(20)
+	effect.setColor(QColor(57, 219, 255))
+	QPushButton.setGraphicsEffect(effect)
+}</string>
+             </property>
+             <property name="text">
+              <string>Заметки</string>
+             </property>
+            </widget>
            </item>
            <item>
             <widget class="QGroupBox" name="Check">
@@ -893,8 +935,6 @@ QPushButton:hover{
                  <property name="font">
                   <font>
                    <pointsize>-1</pointsize>
-                   <weight>50</weight>
-                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="styleSheet">
@@ -987,8 +1027,6 @@ QPushButton:hover{
                  <property name="font">
                   <font>
                    <pointsize>-1</pointsize>
-                   <weight>50</weight>
-                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="styleSheet">
@@ -1188,8 +1226,8 @@ QPushButton:hover{
        <attribute name="title">
         <string>Заметки</string>
        </attribute>
-       <layout class="QVBoxLayout" name="verticalLayout_6">
-        <item>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
          <widget class="QTableWidget" name="maintable">
           <property name="maximumSize">
            <size>
@@ -1197,9 +1235,14 @@ QPushButton:hover{
             <height>16777215</height>
            </size>
           </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
          </widget>
         </item>
-        <item>
+        <item row="1" column="0">
          <widget class="QWidget" name="widget" native="true">
           <property name="minimumSize">
            <size>
@@ -1236,6 +1279,129 @@ QPushButton:hover{
              <property name="currentIndex">
               <number>0</number>
              </property>
+             <widget class="QWidget" name="Show">
+              <attribute name="title">
+               <string>Показать</string>
+              </attribute>
+              <layout class="QHBoxLayout" name="horizontalLayout_6">
+               <item>
+                <widget class="QWidget" name="widget_3" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>231</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>231</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_20">
+                  <item>
+                   <widget class="QPushButton" name="showing">
+                    <property name="minimumSize">
+                     <size>
+                      <width>211</width>
+                      <height>51</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>211</width>
+                      <height>51</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>-1</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+    padding:10px;
+    color: #fffff;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #3873d9;
+    background-color: white; }
+
+QPushButton:hover{
+	background-color: rgb(171, 211, 247);
+	effect = QtWidgets.QGraphicsDropShadowEffect(QPushButton)
+	effect.setOffset(0, 0)
+	effect.setBlurRadius(20)
+	effect.setColor(QColor(57, 219, 255))
+	QPushButton.setGraphicsEffect(effect)
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Показать</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QWidget" name="fake9" native="true"/>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QWidget" name="widget_5" native="true">
+                 <layout class="QVBoxLayout" name="verticalLayout_21">
+                  <item>
+                   <widget class="QComboBox" name="choosedate">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>51</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>51</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>11</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>За всё время</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>На месяц</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>На неделю</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QWidget" name="fake10" native="true"/>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
              <widget class="QWidget" name="Doing">
               <attribute name="title">
                <string>Сделать</string>
@@ -1255,6 +1421,12 @@ QPushButton:hover{
                    <height>16777215</height>
                   </size>
                  </property>
+                 <property name="font">
+                  <font>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
                  <layout class="QVBoxLayout" name="verticalLayout_13">
                   <item>
                    <widget class="QPushButton" name="complete">
@@ -1269,6 +1441,11 @@ QPushButton:hover{
                       <width>211</width>
                       <height>51</height>
                      </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>-1</pointsize>
+                     </font>
                     </property>
                     <property name="styleSheet">
                      <string notr="true">QPushButton {
@@ -1290,38 +1467,6 @@ QPushButton:hover{
                     </property>
                     <property name="text">
                      <string>Выполнено</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QDateTimeEdit" name="date_1">
-                    <property name="minimumSize">
-                     <size>
-                      <width>211</width>
-                      <height>51</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>211</width>
-                      <height>51</height>
-                     </size>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <pointsize>12</pointsize>
-                      <weight>50</weight>
-                      <bold>false</bold>
-                     </font>
-                    </property>
-                    <property name="layoutDirection">
-                     <enum>Qt::LeftToRight</enum>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                    <property name="buttonSymbols">
-                     <enum>QAbstractSpinBox::UpDownArrows</enum>
                     </property>
                    </widget>
                   </item>
@@ -1348,6 +1493,11 @@ QPushButton:hover{
                       <height>51</height>
                      </size>
                     </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>11</pointsize>
+                     </font>
+                    </property>
                    </widget>
                   </item>
                   <item>
@@ -1371,6 +1521,12 @@ QPushButton:hover{
                    <height>0</height>
                   </size>
                  </property>
+                 <property name="font">
+                  <font>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
                  <layout class="QVBoxLayout" name="verticalLayout_3">
                   <item>
                    <widget class="QPushButton" name="added">
@@ -1389,8 +1545,6 @@ QPushButton:hover{
                     <property name="font">
                      <font>
                       <pointsize>-1</pointsize>
-                      <weight>50</weight>
-                      <bold>false</bold>
                      </font>
                     </property>
                     <property name="styleSheet">
@@ -1417,7 +1571,7 @@ QPushButton:hover{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QDateTimeEdit" name="date_2">
+                   <widget class="QDateTimeEdit" name="date_1">
                     <property name="minimumSize">
                      <size>
                       <width>211</width>
@@ -1466,9 +1620,15 @@ QPushButton:hover{
                    <height>0</height>
                   </size>
                  </property>
+                 <property name="font">
+                  <font>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
                  <layout class="QVBoxLayout" name="verticalLayout_19">
                   <item>
-                   <widget class="QPushButton" name="update">
+                   <widget class="QPushButton" name="demonstr">
                     <property name="minimumSize">
                      <size>
                       <width>211</width>
@@ -1484,8 +1644,6 @@ QPushButton:hover{
                     <property name="font">
                      <font>
                       <pointsize>-1</pointsize>
-                      <weight>50</weight>
-                      <bold>false</bold>
                      </font>
                     </property>
                     <property name="styleSheet">
@@ -1507,12 +1665,35 @@ QPushButton:hover{
 }</string>
                     </property>
                     <property name="text">
-                     <string>Обновить</string>
+                     <string>Показать</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QDateTimeEdit" name="date_3">
+                   <widget class="QComboBox" name="choose_2">
+                    <property name="minimumSize">
+                     <size>
+                      <width>211</width>
+                      <height>51</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>211</width>
+                      <height>51</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>11</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QDateTimeEdit" name="date_2">
                     <property name="minimumSize">
                      <size>
                       <width>211</width>
@@ -1538,22 +1719,6 @@ QPushButton:hover{
                    </widget>
                   </item>
                   <item>
-                   <widget class="QComboBox" name="choose_2">
-                    <property name="minimumSize">
-                     <size>
-                      <width>211</width>
-                      <height>51</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>211</width>
-                      <height>51</height>
-                     </size>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
                    <widget class="QWidget" name="fake8" native="true"/>
                   </item>
                  </layout>
@@ -1562,100 +1727,45 @@ QPushButton:hover{
                <item>
                 <widget class="QPlainTextEdit" name="write_2"/>
                </item>
-              </layout>
-             </widget>
-            </widget>
-           </item>
-           <item>
-            <widget class="QGroupBox" name="viewnote">
-             <property name="minimumSize">
-              <size>
-               <width>260</width>
-               <height>250</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>260</width>
-               <height>250</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <pointsize>10</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
-              </font>
-             </property>
-             <property name="title">
-              <string> Просмотр заметки</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-             </property>
-             <layout class="QVBoxLayout" name="verticalLayout_20">
-              <item>
-               <widget class="QComboBox" name="choosedate">
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>31</height>
-                 </size>
-                </property>
-                <property name="maximumSize">
-                 <size>
-                  <width>16777215</width>
-                  <height>31</height>
-                 </size>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>10</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <item>
-                 <property name="text">
-                  <string>За всё время</string>
+               <item>
+                <widget class="QWidget" name="default4" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>160</width>
+                   <height>0</height>
+                  </size>
                  </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>На месяц</string>
+                 <property name="font">
+                  <font>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
                  </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>На неделю</string>
-                 </property>
-                </item>
-               </widget>
-              </item>
-              <item>
-               <widget class="QWidget" name="fake9" native="true"/>
-              </item>
-              <item>
-               <widget class="QPushButton" name="showing">
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>41</height>
-                 </size>
-                </property>
-                <property name="maximumSize">
-                 <size>
-                  <width>16777215</width>
-                  <height>41</height>
-                 </size>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>-1</pointsize>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton {
+                 <layout class="QVBoxLayout" name="verticalLayout_22">
+                  <item>
+                   <widget class="QWidget" name="fake11" native="true"/>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="updat">
+                    <property name="minimumSize">
+                     <size>
+                      <width>140</width>
+                      <height>51</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>140</width>
+                      <height>51</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>-1</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
     padding:10px;
     color: #fffff;
     font-size: 18px;
@@ -1671,13 +1781,87 @@ QPushButton:hover{
 	effect.setColor(QColor(57, 219, 255))
 	QPushButton.setGraphicsEffect(effect)
 }</string>
-                </property>
-                <property name="text">
-                 <string>Показать</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
+                    </property>
+                    <property name="text">
+                     <string>Обновить</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="default5" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>231</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>231</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <widget class="QPushButton" name="get_rasp">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>211</width>
+                <height>51</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>211</width>
+                <height>51</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>211</width>
+                <height>51</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    padding:10px;
+    color: #fffff;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #3873d9;
+    background-color: white; }
+
+QPushButton:hover{
+	background-color: rgb(171, 211, 247);
+	effect = QtWidgets.QGraphicsDropShadowEffect(QPushButton)
+	effect.setOffset(0, 0)
+	effect.setBlurRadius(20)
+	effect.setColor(QColor(57, 219, 255))
+	QPushButton.setGraphicsEffect(effect)
+}</string>
+              </property>
+              <property name="text">
+               <string>Расписание</string>
+              </property>
+             </widget>
             </widget>
            </item>
           </layout>
@@ -1697,6 +1881,11 @@ QPushButton:hover{
   <action name="action_Sign_in">
    <property name="text">
     <string>&amp;Sign in</string>
+   </property>
+  </action>
+  <action name="file">
+   <property name="text">
+    <string>Путь к файлу Таблицы</string>
    </property>
   </action>
  </widget>
