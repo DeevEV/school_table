@@ -12,10 +12,6 @@ if hasattr(QtCore.Qt, 'AA_EnableHighDpiScaling'):
 if hasattr(QtCore.Qt, 'AA_UseHighDpiPixmaps'):
     QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_UseHighDpiPixmaps, True)
 
-# ВСТАВИТЬ В ИНТЕРФЕЙС ПОСЛЕ ФОРМАТИРОВАНИЯ
-# self.setWindowTitle('Icon')
-# self.setWindowIcon(QtGui.QIcon('web.png'))
-
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -1211,17 +1207,22 @@ class MyWidget(QMainWindow, Ui_MainWindow):
         elif tp == 1 or tp == 2:
             with self.connection:
                 note = self.cursor.execute("SELECT `date`, `note` FROM notes").fetchall()
+
+            # СОРТИРОВКА ДАТ
+            note = [[dt.datetime.strptime(dat, "%H:%M %d.%m.%Y"), nt] for dat, nt in note]
+            note.sort()
+
             maintable = self.maintable
             maintable.setColumnCount(2)
             maintable.setRowCount(0)
             maintable.setHorizontalHeaderLabels(["Дата", "Заметка"])
 
             if tp == 1:
-                dates = ['.'.join(reversed(str(dt.date.today() + dt.timedelta(days=i)).split('-'))) for i in range(30)]
+                dates = [dt.date.today() + dt.timedelta(days=i) for i in range(30)]
             else:
-                dates = ['.'.join(reversed(str(dt.date.today() + dt.timedelta(days=i)).split('-'))) for i in range(7)]
+                dates = [dt.date.today() + dt.timedelta(days=i) for i in range(7)]
 
-            notes = [i for i in note if i[0][-10:] in dates]
+            notes = [[dt.datetime.strftime(dat, "%d.%m.%Y %H:%M "), nt] for dat, nt in note if dat.date() in dates]
 
             if notes:
                 for i, row in enumerate(notes):
@@ -1238,8 +1239,13 @@ class MyWidget(QMainWindow, Ui_MainWindow):
             ids = note.split(".")[0]
 
             with self.connection:
-                notes = self.cursor.execute("SELECT `id` FROM `notes`").fetchall()
-            ids = notes[int(ids) - 1][0]
+                notes = self.cursor.execute("SELECT `id`, `date` FROM `notes`").fetchall()
+
+            notes = [[dt.datetime.strptime(dat, "%H:%M %d.%m.%Y"), ids] for ids, dat in notes]
+            notes.sort()
+            notes = [idp for dat, idp in notes]
+
+            ids = notes[int(ids) - 1]
 
             with self.connection:
                 self.cursor.execute("DELETE FROM `notes` WHERE `id` = ?", (ids, ))
@@ -1273,8 +1279,13 @@ class MyWidget(QMainWindow, Ui_MainWindow):
             ids = z.split(".")[0]
 
             with self.connection:
-                notes = self.cursor.execute("SELECT `id` FROM `notes`").fetchall()
-            ids = notes[int(ids) - 1][0]
+                notes = self.cursor.execute("SELECT `id`, `date` FROM `notes`").fetchall()
+
+            notes = [[dt.datetime.strptime(dat, "%H:%M %d.%m.%Y"), ids] for ids, dat in notes]
+            notes.sort()
+            notes = [idp for dat, idp in notes]
+
+            ids = notes[int(ids) - 1]
 
             if sender == "Показать":
                 with self.connection:
