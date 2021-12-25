@@ -914,17 +914,16 @@ class Ui_MainWindow(object):
         for x, tx in data:
             x.setText(_translate("MainWindow", tx))
 
-        self.Toolbar1.setTabText(self.Toolbar1.indexOf(self.Add), _translate("MainWindow", "Добавить"))
-        self.Toolbar1.setTabText(self.Toolbar1.indexOf(self.Del), _translate("MainWindow", "Удалить"))
-        self.Toolbar2.setTabText(self.Toolbar2.indexOf(self.Upd), _translate("MainWindow", "Изменить"))
-        self.Toolbar2.setTabText(self.Toolbar2.indexOf(self.Clear), _translate("MainWindow", "Убрать"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.rasp), _translate("MainWindow", "Расписание"))
-        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.Show), _translate("MainWindow", "Показать"))
-        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.Doing), _translate("MainWindow", "Сделать"))
-        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.Adding), _translate("MainWindow", "Добавить"))
-        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.Upating), _translate("MainWindow", "Редактрировать"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.note), _translate("MainWindow", "Заметки"))
+        Tabs = {self.Toolbar1: [[self.Add, "Добавить"], [self.Del, "Удалить"]], 
+                self.Toolbar2: [[self.Upd, "Изменить"], [self.Clear, "Убрать"]], 
+                self.tabWidget: [[self.rasp, "Расписание"], [self.note, "Заметки"]], 
+                self.tabWidget_2: [[self.Show, "Показать"], [self.Doing, "Сделать"], 
+                                   [self.Adding, "Добавить"], [self.Upating, "Редактрировать"]]}
 
+        for i in Tabs:
+            for j in Tabs[i]:
+                i.setTabText(i.indexOf(j[0]), _translate("MainWindow", j[1]))
+                
 
 # ОСНОВНОЕ ТЕЛО ПРОГРАММЫ
 class MyWidget(QMainWindow, Ui_MainWindow):
