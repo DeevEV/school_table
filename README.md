@@ -141,7 +141,7 @@ CREATE TABLE notes (
 ## 👨‍💻 Автор
 
 **Деев Егор Викторович**
-- GitHub: [@DeevEV](https://github.com/DeevEV)
+- GitHub: [@EDeev](https://github.com/EDeev)
 - Email: egor@deev.space
 - Telegram: [@Egor_Deev](https://t.me/Egor_Deev)
 
